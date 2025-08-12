@@ -166,7 +166,7 @@ For Qlik Sense SaaS:
 ## Related Resources
 
 - [Qlik Sense Developer Documentation](https://qlik.dev/): Official documentation for Qlik Sense Developers.
-- [Nebula CLI Documentation](https://qlik.dev/tools/nebula-cli): Guide for using Nebula CLI to develop Qlik Sense extensions.
+- [Nebula CLI Documentation](https://qlik.dev/extend/): Guide for using Nebula CLI to develop Qlik Sense extensions.
 - [React Hooks Documentation](https://react.dev/reference/react/hooks): Reference for React hooks, commonly used in Nebula extensions.
 - [Playwright Testing Framework](https://playwright.dev/docs/intro): Documentation for Playwright, the testing framework used in this project.
 
