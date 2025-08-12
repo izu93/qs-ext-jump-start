@@ -1,0 +1,50 @@
+{
+  "name": "qs-ext-jump-start",
+  "description": "A Qlik Sense extension for pixel-perfect design.",
+  "keywords": [],
+  "version": "0.1.0",
+  "license": "SEE LICENSE IN license.txt",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/QlikSenseStudios/qs-ext-jump-start.git"
+  },
+  "bugs": {
+    "url": "https://github.com/QlikSenseStudios/qs-ext-jump-start/issues"
+  },
+  "homepage": "https://github.com/QlikSenseStudios/qs-ext-jump-start#readme",
+  "contributors": [
+    {
+      "name": "Qlik Professional Services"
+    },
+    {
+      "name": "Gabriel Wingard",
+      "email": "gabriel.wingard@qlik.com"
+    }
+  ],
+  "scripts": {
+    "lint": "eslint src",
+    "build": "nebula build",
+    "serve": "nebula serve",
+    "test": "playwright test",
+    "serve:report": "playwright show-report test/report",
+    "package": "nebula sense --meta src/meta.json"
+  },
+  "devDependencies": {
+    "@nebula.js/cli": "^5.17.0",
+    "@nebula.js/cli-build": "^5.17.0",
+    "@nebula.js/cli-sense": "^5.17.0",
+    "@nebula.js/cli-serve": "^5.17.0",
+    "@playwright/test": "^1.54.2",
+    "dotenv": "^17.2.1",
+    "eslint": "^9.32.0",
+    "prettier": "^3.6.2"
+  },
+  "peerDependencies": {
+    "@nebula.js/stardust": "^5.17.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/qs-ext-jump-start.js",
+  "module": "dist/qs-ext-jump-start.esm.js"
+}

@@ -1,0 +1,45 @@
+# Node modules
+node_modules/
+
+# Rollup bundle analysis
+bundle-analysis.html
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+jspm_packages/
+
+# Build output
+dist/
+
+# Playwright test output
+test/report/
+test/artifacts/
+
+# IDE files
+.vscode/
+.idea/
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Miscellaneous
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Qlik Deployment and Nebula.js generated files
+*-ext/
+*.zip
+
+# Sandbox
+sandbox/
