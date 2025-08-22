@@ -1,0 +1,53 @@
+# .aiconfig
+
+project:
+  name: QS-Ext-Jump-Start
+  description: >
+    Boilerplate for Qlik Sense extension development, featuring Nebula CLI, Playwright testing, and deployment guides.
+  language: JavaScript
+  frameworks:
+    - nebula.js
+    - playwright
+  documentation: README.md
+  knowledge_base: KNOWLEDGE_BASE.md
+  project_structure: docs/PROJECT_STRUCTURE.md
+  workflows: docs/WORKFLOWS.md
+  license: MIT
+
+ai:
+  preferred_model: gpt-4o-mini
+  code_style:
+    lint: eslint
+    format: prettier
+  prompt_templates:
+    - 'Summarize this code.'
+    - 'Update this template into a new project per docs/WORKFLOWS.md (Workflow B) and the Rename & Rebrand checklist, without changing runtime behavior.'
+    - 'Suggest improvements for Qlik Sense extension development.'
+    - 'Generate Playwright tests for this module.'
+    - 'List files related to QAE configuration.'
+    - 'Create documentation for a new property panel section.'
+  exclude_paths:
+    - node_modules/
+    - dist/
+    - test/report/
+    - .git/
+
+contributors:
+  - name: Qlik Professional Services
+  - name: Karthik Burra
+    email: karthik.burra@qlik.com
+  - name: Gabriel Wingard
+    email: gabriel.wingard@qlik.com
+
+default_context:
+  # Qlik Sense and Nebula.js official resources
+  - https://qlik.dev/ (Qlik Sense Developer Documentation)
+  - https://qlik.dev/extend/ (Nebula CLI Documentation)
+
+  # Qlik open source reference implementations
+  - All repositories from https://github.com/qlik-oss with names starting with sn-
+
+  # Core technology documentation
+  - https://react.dev/reference/react/hooks (React Hooks)
+  - https://playwright.dev/docs/intro (Playwright Testing Framework)
+# Optionally, you can add more sections for integrations, security, or custom instructions.
