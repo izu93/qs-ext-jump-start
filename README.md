@@ -53,11 +53,12 @@ See `src/index.js` and `src/styles.css` for the implementation, and `test/states
 
 ### 🎯 Usage Guides
 
-| Guide                                     | Purpose                        | When to Use                            |
-| ----------------------------------------- | ------------------------------ | -------------------------------------- |
-| [**Setup Guides**](./docs/)               | Environment configuration      | First-time setup, CI/CD integration    |
-| [**Knowledge Base**](./KNOWLEDGE_BASE.md) | Best practices & patterns      | Development questions, troubleshooting |
-| [**Testing Guide**](./docs/TESTING.md)    | How to run and customize tests | Running tests, debugging, extending    |
+| Guide                                      | Purpose                        | When to Use                            |
+| ------------------------------------------ | ------------------------------ | -------------------------------------- |
+| [**Setup Guides**](./docs/)                | Environment configuration      | First-time setup, CI/CD integration    |
+| [**Cursor Setup**](./docs/CURSOR_SETUP.md) | Cursor IDE configuration       | Setting up Cursor for this project     |
+| [**Knowledge Base**](./KNOWLEDGE_BASE.md)  | Best practices & patterns      | Development questions, troubleshooting |
+| [**Testing Guide**](./docs/TESTING.md)     | How to run and customize tests | Running tests, debugging, extending    |
 
 ### 📋 Project Information
 
@@ -189,13 +190,26 @@ MIT License - see [license.txt](./license.txt) for details.
 
 _For technical implementation details and version history, see [CHANGELOG.md](./docs/CHANGELOG.md). This README focuses on practical usage and getting started quickly._
 
-## 🧩 Recommended VS Code Extensions
+## 🧩 Recommended Cursor Extensions & Setup
 
-Recommended extensions to improve development and testing:
+Recommended extensions and settings to improve development and testing in Cursor:
 
-- ESLint (dbaeumer.vscode-eslint)
-- Prettier (esbenp.prettier-vscode)
-- Playwright Test for VSCode (ms-playwright.playwright)
-- EditorConfig (EditorConfig.EditorConfig)
-- Markdown All in One (yzhang.markdown-all-in-one)
-- GitHub Pull Requests and Issues (GitHub.vscode-pull-request-github)
+### Extensions
+
+- ESLint (dbaeumer.vscode-eslint) - JavaScript/TypeScript linting
+- Prettier (esbenp.prettier-vscode) - Code formatting
+- Playwright Test for VSCode (ms-playwright.playwright) - Test running and debugging
+- EditorConfig (EditorConfig.EditorConfig) - Consistent editor settings
+- Markdown All in One (yzhang.markdown-all-in-one) - Enhanced markdown editing
+- GitHub Pull Requests and Issues (GitHub.vscode-pull-request-github) - Git integration
+
+### Cursor-Specific Features
+
+- **AI Code Generation**: Use Ctrl+K (Cmd+K on Mac) to generate code with AI assistance
+- **Composer**: Use Ctrl+I (Cmd+I on Mac) for multi-file editing and refactoring
+- **AI Chat**: Use the built-in AI chat for code questions and debugging help
+- **Codebase-wide AI**: Ask questions about the entire codebase structure and patterns
+
+### Recommended Settings
+
+Create a `.cursor/` directory with cursor-specific configurations (see `.cursorrules` for AI instructions)

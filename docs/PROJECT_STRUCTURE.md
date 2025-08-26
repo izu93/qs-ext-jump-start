@@ -9,7 +9,8 @@ This document explains the purpose and typical usage of each file and folder.
 - `eslint.config.js` — ESLint v9 flat config
 - `.editorconfig` — Editor defaults across IDEs
 - `.prettierrc` — Prettier formatting rules
-- `.vscode/` — Workspace settings
+- `.cursor/` — Cursor IDE settings and configurations
+- `.cursorrules` — AI assistant rules and project context
 - `license.txt` — License
 - `README.md` — Usage-focused docs
 - `CONTRIBUTING.md` — Contribution guidelines

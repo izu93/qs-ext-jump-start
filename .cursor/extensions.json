@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "ms-playwright.playwright",
+    "editorconfig.editorconfig",
+    "yzhang.markdown-all-in-one",
+    "github.vscode-pull-request-github"
+  ],
+  "unwantedRecommendations": ["ms-vscode.vscode-typescript-next"]
+}

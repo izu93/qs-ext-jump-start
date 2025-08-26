@@ -88,7 +88,9 @@ See [README.md](./README.md) for detailed quick start instructions.
 - Use this knowledge base and referenced documentation for context
 - For code generation, prefer patterns from sn-\* Qlik OSS projects
 - Follow [TODO.md](./TODO.md) for improvement ideas and best practices
-- Use [.aiconfig](./.aiconfig) for project metadata and context
+- Use [.cursorrules](./.cursorrules) for Cursor AI project context and coding standards
+- Leverage Cursor's AI features: Ctrl+K for code generation, Ctrl+I for multi-file editing
+- See [.cursor/prompts.md](./.cursor/prompts.md) for project-specific AI prompt templates
 
 ## 9. Example Prompts for AI
 

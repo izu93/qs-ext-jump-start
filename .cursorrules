@@ -1,0 +1,64 @@
+# Cursor AI Rules for QS-Ext-Jump-Start
+
+## Project Context
+
+This is a Qlik Sense Extension development template using:
+
+- **Nebula.js**: Qlik's framework for building extensions
+- **Playwright**: End-to-end testing with real Qlik Sense integration
+- **Node.js 20+**: Modern JavaScript runtime
+- **ESLint**: Code quality and consistency
+- **Prettier**: Code formatting
+
+## Key Architecture Patterns
+
+- Use Nebula.js hooks (`useElement`, `useLayout`, `useSelections`, etc.)
+- Follow Qlik's extension structure: `src/index.js` (main), `src/ext.js` (config), `src/qae/` (properties & data)
+- Write state-focused Playwright tests in `test/states/`
+- Use semantic HTML with ARIA attributes for accessibility
+
+## Code Standards
+
+- **ES6+ JavaScript**: Use modern syntax (const/let, arrow functions, destructuring)
+- **JSDoc comments**: Document functions, especially complex ones
+- **Error handling**: Always provide user feedback for failures
+- **Accessibility**: Include ARIA labels, keyboard navigation, focus management
+- **Testing**: Cover main scenarios: data, no-data, selections, errors
+
+## File Organization
+
+- `src/index.js`: Main extension logic and DOM rendering
+- `src/qae/object-properties.js`: Property panel configuration
+- `src/qae/data.js`: Data processing and hypercube setup
+- `src/styles.css`: Component styling with accessibility support
+- `test/states/*.test.js`: State-specific test modules
+
+## Common Tasks
+
+- **New property**: Add to `src/qae/object-properties.js`
+- **Data changes**: Modify `src/qae/data.js`
+- **UI updates**: Edit `src/index.js` and `src/styles.css`
+- **New tests**: Create modules in `test/states/`
+
+## Best Practices
+
+- Prefer component utilities from `src/utils.js`
+- Use Qlik's design system patterns when possible
+- Always test edge cases (no data, errors, selections)
+- Keep extensions performant for large datasets
+- Follow semantic versioning for releases
+
+## Avoid
+
+- Direct DOM manipulation without Nebula hooks
+- Blocking operations in render cycles
+- Missing error states or loading indicators
+- Accessibility violations (missing ARIA, poor contrast)
+- Untested user interactions or edge cases
+
+## References
+
+- [Qlik Developer Portal](https://qlik.dev/)
+- [Nebula.js Documentation](https://qlik.dev/extend/)
+- [Playwright Testing](https://playwright.dev/)
+- Project docs: `docs/` folder and `KNOWLEDGE_BASE.md`
