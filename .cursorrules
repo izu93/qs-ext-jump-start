@@ -14,6 +14,7 @@ This is a Qlik Sense Extension development template using:
 
 - Use Nebula.js hooks (`useElement`, `useLayout`, `useSelections`, etc.)
 - Follow Qlik's extension structure: `src/index.js` (main), `src/ext.js` (config), `src/qae/` (properties & data)
+- D3.js integration: Use `src/examples/` for D3-powered visualizations
 - Write state-focused Playwright tests in `test/states/`
 - Use semantic HTML with ARIA attributes for accessibility
 
@@ -28,9 +29,10 @@ This is a Qlik Sense Extension development template using:
 ## File Organization
 
 - `src/index.js`: Main extension logic and DOM rendering
+- `src/examples/`: D3.js visualization examples and patterns
 - `src/qae/object-properties.js`: Property panel configuration
 - `src/qae/data.js`: Data processing and hypercube setup
-- `src/styles.css`: Component styling with accessibility support
+- `src/styles.css`: Component styling with accessibility support (includes D3 styles)
 - `test/states/*.test.js`: State-specific test modules
 
 ## Common Tasks

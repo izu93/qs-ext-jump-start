@@ -161,3 +161,120 @@
   /* Locked */
   border-left: 3px solid #6c757d;
 }
+
+/* D3.js specific styles */
+.d3-container {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+}
+
+.d3-container svg {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+}
+
+/* D3 chart styling */
+.d3-container .axis {
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  font-size: 12px;
+}
+
+.d3-container .axis line,
+.d3-container .axis path {
+  fill: none;
+  stroke: #333;
+  shape-rendering: crispEdges;
+}
+
+.d3-container .grid line {
+  stroke: #ddd;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+}
+
+/* Bar chart specific styles */
+.d3-container .bar {
+  transition: fill 0.3s ease;
+}
+
+.d3-container .bar:hover {
+  fill-opacity: 0.8;
+}
+
+.d3-container .bar:focus-visible {
+  outline: 2px solid #0066cc;
+  outline-offset: 1px;
+}
+
+/* Scatter plot specific styles */
+.d3-container .dot {
+  transition: all 0.3s ease;
+}
+
+.d3-container .dot:hover {
+  stroke-width: 2px;
+}
+
+.d3-container .dot:focus-visible {
+  outline: 2px solid #0066cc;
+  outline-offset: 1px;
+}
+
+/* D3 Tooltip styling */
+.d3-tooltip {
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  font-size: 12px;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* D3 Selection states */
+.d3-container .selected {
+  stroke: #ea4335;
+  stroke-width: 2px;
+}
+
+.d3-container .hover {
+  stroke: #34a853;
+  stroke-width: 2px;
+}
+
+/* Responsive D3 charts */
+@media (max-width: 768px) {
+  .d3-container {
+    min-height: 300px;
+  }
+
+  .d3-container .axis {
+    font-size: 10px;
+  }
+
+  .d3-tooltip {
+    font-size: 11px;
+  }
+}
+
+/* High contrast support for D3 elements */
+@media (prefers-contrast: high) {
+  .d3-container .axis line,
+  .d3-container .axis path {
+    stroke: #000;
+    stroke-width: 2px;
+  }
+
+  .d3-container .bar,
+  .d3-container .dot {
+    stroke: #000;
+    stroke-width: 2px;
+  }
+}
+
+/* Reduced motion support for D3 */
+@media (prefers-reduced-motion: reduce) {
+  .d3-container .bar,
+  .d3-container .dot {
+    transition: none !important;
+  }
+}

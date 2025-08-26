@@ -9,6 +9,17 @@
 - "Debug this Nebula.js hook usage and suggest improvements"
 - "Add error handling for this data processing function"
 
+### D3.js Development
+
+- "Create a D3.js [chart type] visualization integrated with Qlik selections"
+- "Help me optimize this D3 chart for large datasets"
+- "Add responsive design to this D3 visualization"
+- "Implement zoom and pan functionality for this D3 chart"
+- "Convert this basic chart to use D3.js with animations"
+- "Add accessibility features to this D3 visualization"
+- "Debug D3 selection integration with Qlik Sense"
+- "Create interactive tooltips for this D3 chart"
+
 ### Testing
 
 - "Write a Playwright test for [specific user interaction]"

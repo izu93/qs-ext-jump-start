@@ -30,7 +30,8 @@ See [CHANGELOG.md](./docs/CHANGELOG.md) for recent updates.
 
 This template provides:
 
-- Example extension code (see `src/`)
+- Example extension code with both basic and D3.js examples (see `src/`)
+- D3.js integration patterns for advanced data visualizations
 - Playwright-based testing setup (see `test/`)
 - Nebula CLI development server
 - Packaging and deployment scripts
@@ -49,16 +50,34 @@ This template includes a simple selections-focused example to demonstrate best p
 
 See `src/index.js` and `src/styles.css` for the implementation, and `test/states/*.test.js` for E2E coverage.
 
+### D3.js Examples
+
+The template also includes advanced D3.js visualization examples:
+
+- **Bar Chart** (`src/examples/d3-bar-chart.js`): Interactive bar chart with animations and selections
+- **Scatter Plot** (`src/examples/d3-scatter-plot.js`): Advanced scatter plot with zoom, pan, and brush selection
+
+Features of D3 examples:
+
+- Full D3.js integration with Qlik selections
+- Responsive design and accessibility support
+- Smooth animations and transitions
+- Interactive tooltips and zoom capabilities
+- Proper keyboard navigation
+
+To use a D3 example, modify `src/index.js` to import and use one of the examples from `src/examples/`.
+
 ## 📖 Documentation
 
 ### 🎯 Usage Guides
 
-| Guide                                      | Purpose                        | When to Use                            |
-| ------------------------------------------ | ------------------------------ | -------------------------------------- |
-| [**Setup Guides**](./docs/)                | Environment configuration      | First-time setup, CI/CD integration    |
-| [**Cursor Setup**](./docs/CURSOR_SETUP.md) | Cursor IDE configuration       | Setting up Cursor for this project     |
-| [**Knowledge Base**](./KNOWLEDGE_BASE.md)  | Best practices & patterns      | Development questions, troubleshooting |
-| [**Testing Guide**](./docs/TESTING.md)     | How to run and customize tests | Running tests, debugging, extending    |
+| Guide                                          | Purpose                        | When to Use                            |
+| ---------------------------------------------- | ------------------------------ | -------------------------------------- |
+| [**Setup Guides**](./docs/)                    | Environment configuration      | First-time setup, CI/CD integration    |
+| [**Cursor Setup**](./docs/CURSOR_SETUP.md)     | Cursor IDE configuration       | Setting up Cursor for this project     |
+| [**D3 Development**](./docs/D3_DEVELOPMENT.md) | D3.js integration patterns     | Building advanced data visualizations  |
+| [**Knowledge Base**](./KNOWLEDGE_BASE.md)      | Best practices & patterns      | Development questions, troubleshooting |
+| [**Testing Guide**](./docs/TESTING.md)         | How to run and customize tests | Running tests, debugging, extending    |
 
 ### 📋 Project Information
 
@@ -100,10 +119,14 @@ npm run package
 src/
 ├── index.js              # 🎯 Main extension logic
 ├── ext.js                # ⚙️ Extension configuration
+├── examples/             # 📚 D3.js and advanced examples
+│   ├── d3-bar-chart.js   # 📊 D3 bar chart example
+│   ├── d3-scatter-plot.js # 🎯 D3 scatter plot example
+│   └── index.js          # 📋 Examples index
 ├── qae/
 │   ├── data.js           # 📊 Data processing
 │   └── object-properties.js  # 🎛️ Property panel setup
-├── styles.css            # 🎨 Extension styling
+├── styles.css            # 🎨 Extension styling (includes D3 styles)
 ├── utils.js              # 🔧 Utility functions
 └── meta.json            # 📋 Extension metadata
 
